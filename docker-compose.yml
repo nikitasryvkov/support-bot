@@ -1,0 +1,53 @@
+version: "3.8"
+services:
+  redis:
+    image: "redis:7-alpine"
+    volumes:
+      - redis-data:/data
+    command: ["redis-server", "--save", "900", "1"]
+    restart: unless-stopped
+
+  bot:
+    build: ./app/bot
+    env_file:
+      - .env
+    depends_on:
+      - redis
+    volumes:
+      - ./app/locales:/app/locales:ro
+    restart: unless-stopped
+
+  reminder:
+    build: ./app/reminder
+    env_file:
+      - .env
+    depends_on:
+      - redis
+      - bot
+    restart: unless-stopped
+
+  admin:
+    build: ./admin
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+    restart: unless-stopped
+
+  backup:
+    image: alpine:3.18
+    env_file:
+      - .env
+    volumes:
+      - redis-backups:/backups
+      - ./backup:/backup:ro
+    entrypoint: ["/bin/sh","/backup/backup_redis.sh"]
+    depends_on:
+      - redis
+    restart: "no"
+
+volumes:
+  redis-data:
+  redis-backups:

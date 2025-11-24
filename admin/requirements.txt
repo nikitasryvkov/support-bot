@@ -1,0 +1,4 @@
+Flask>=2.3
+redis>=4.5
+requests>=2.31
+python-dotenv>=1.0

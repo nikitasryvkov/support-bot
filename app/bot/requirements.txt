@@ -1,0 +1,5 @@
+aiogram==2.27
+redis>=4.5
+cryptography>=41
+python-dotenv>=1.0
+requests>=2.31

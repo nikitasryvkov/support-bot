@@ -1,0 +1,17 @@
+{
+  "welcome": "Привет! Я бот поддержки. Я помогу создать тикет.",
+  "help_short": "Напишите сообщение — и будет создан тикет. Используйте /language для смены языка.",
+  "choose_language": "Выберите язык:",
+  "language_set": "Язык успешно установлен.",
+  "ticket_created": "Ваш тикет #{id} создан {emoji}. Служба поддержки свяжется с вами здесь.",
+  "new_ticket_notification": "Новый тикет #{id} от {user}",
+  "ticket_line": "#{id} {emoji} статус: {status} создан: {created}",
+  "no_tickets": "У вас нет тикетов.",
+  "operator_reply_prefix": "Ответ от поддержки:",
+  "posted_to_user": "Сообщение отправлено пользователю.",
+  "resolve_usage": "Использование: /resolve <id_тикета>",
+  "ticket_not_found": "Тикет #{id} не найден.",
+  "not_owner": "Вы не владелец этого тикета.",
+  "ticket_resolved": "Тикет #{id} отмечен как решенный {emoji}. Спасибо!",
+  "ticket_resolved_notify": "Тикет #{id} был закрыт пользователем."
+}

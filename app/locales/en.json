@@ -1,0 +1,17 @@
+{
+  "welcome": "Hello! I'm SupportBot. I will help you create a support ticket.",
+  "help_short": "Send me a message to create a ticket. Use /language to change language.",
+  "choose_language": "Choose your preferred language:",
+  "language_set": "Language set successfully.",
+  "ticket_created": "Your ticket #{id} has been created {emoji}. Our support team will contact you here.",
+  "new_ticket_notification": "New ticket #{id} from {user}",
+  "ticket_line": "#{id} {emoji} status: {status} created: {created}",
+  "no_tickets": "You have no tickets.",
+  "operator_reply_prefix": "Reply from support:",
+  "posted_to_user": "Message sent to the user.",
+  "resolve_usage": "Usage: /resolve <ticket_id>",
+  "ticket_not_found": "Ticket #{id} not found.",
+  "not_owner": "You are not the owner of this ticket.",
+  "ticket_resolved": "Ticket #{id} marked as resolved {emoji}. Thank you!",
+  "ticket_resolved_notify": "Ticket #{id} was resolved by user."
+}
