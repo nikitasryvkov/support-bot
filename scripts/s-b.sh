@@ -17,10 +17,10 @@ APP_NAME="support-bot"
 BIN_NAME="s-b"
 DEFAULT_INSTALL_DIR="/opt/${APP_NAME}"
 INSTALL_DIR="${INSTALL_DIR:-${DEFAULT_INSTALL_DIR}}"
-REPO_URL="https://github.com/nikitasryvkov/bot.git"
+REPO_URL="https://github.com/nikitasryvkov/support-bot.git"
 
 # raw URL used for self-update (точный путь к raw должен существовать в репозитории)
-UPDATE_URL="https://raw.githubusercontent.com/nikitasryvkov/bot/refs/heads/main/scripts/s-b.sh"
+UPDATE_URL="https://raw.githubusercontent.com/nikitasryvkov/support-bot/refs/heads/main/scripts/s-b.sh"
 
 SCRIPT_SOURCE="${BASH_SOURCE[0]:-}"
 ACTUAL_PATH=""
